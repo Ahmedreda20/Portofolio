@@ -1,0 +1,555 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    font-family: 'AbeeZee';
+    scroll-behavior: smooth;
+}
+nav ul li{
+    padding: 10px 20px;
+    display: inline-block;
+    line-height: 100px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    letter-spacing: 1px;
+}
+nav ul  li a:hover{
+    text-decoration: underline;
+}
+nav img{
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+.container{
+    background: rgba(0, 0, 0, 0.164);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 1;
+
+}
+.singUp{
+    width: 500px;
+    height: 700px;
+    background: white;
+    position: relative;
+    display: block;
+    margin: 10% auto;
+    border-radius: 10px;
+    animation: animate 1.5s;
+    display: none;
+}
+@keyframes animate{
+    from{
+        margin-top: 0;
+        opacity: 0;
+    }
+    to{
+        margin-top: 10%;
+        opacity: 1;
+    } 
+}
+#title{
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 100px;
+    letter-spacing: 1px;
+    color: rgb(27, 27, 49);
+}
+.popup strong{ 
+    color: red;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="submit"]{
+    display: block;
+    padding: 10px;
+    width: 300px;
+    margin: 1% auto;
+    border-radius: 4px;
+    border: 1px solid #f3f3f3;
+    font-family: 'AbeeZee';
+    letter-spacing: 1px;
+}
+
+form label[for="text"]{
+    font-size: 15px;
+    line-height: 40px;
+}
+form{
+    width: 300px;
+    margin: 5% auto;
+    text-align: justify;
+}
+form a{
+    display: block;
+    text-align: center;
+}
+form input[type="submit"]{
+    background: rgb(23, 23, 37);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+form input[type="checkbox"]{
+    margin-right: 5px;
+}
+form span{
+    color: red;
+}
+.btn-close{
+    color: black;
+    font-weight: bolder;
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: 3%;
+    top: 1%;
+    border: none;
+    background: none;
+}
+.btn-close:hover{
+    color: red;
+    transition: 0.5s ease;
+}
+.login{
+    width: 500px;
+    height: 300px;
+    background: white;
+    position: relative;
+    display: block;
+    margin: 10% auto;
+    border-radius: 10px;
+    animation: animate 1.5s;
+    display: none;
+}
+.login form{
+    display: inline-block;
+    margin-top:5%;
+}
+.show{
+    width: 1200px;
+    background: #f3f3f3;
+    display: block;
+    margin: 2% auto;
+    height: 660px;
+    overflow: hidden;
+}
+.show video{
+    max-width: 100%;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 100px;
+  }
+  
+  .gallery{
+    width: 1260px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    height: auto;
+    overflow: hidden;
+  }
+  .gallery h1{
+      font-size: 50px;
+      line-height: 50px;
+    letter-spacing: 2px;
+
+  }
+  .gallery p{
+    font-size: 20px;
+    line-height: 50px;
+    letter-spacing: 2px;
+}
+  .container-box{
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+    border-radius: 4px;
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .box{
+      width: 100%;
+      height: 100%;
+      border-radius: 4px;
+      background-size: 100% 100%;
+      position: relative;
+      transition-duration: 4s;
+  }
+  .connent{
+      background: rgba(23, 23, 37, 0.178);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      line-height: 250px;
+      display: none;
+  }
+  .connent a{
+      color: white;
+      text-decoration: none;
+      letter-spacing: 2px;
+  }
+  .box:hover{      
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    z-index: 0;
+  }
+
+  .box:hover
+  .connent{
+      display: block;
+  }
+.btn-top{
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.social button{
+    border: none;
+    background: none;
+    font-size: 25px;
+    margin: 20px;
+    line-height:100px;
+}
+.social a{
+    color: black;
+}
+/* About */
+.container-about{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.164);
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 1;
+}
+.poup-about{
+    width: 1200px;
+    height: 700px;
+    background: white;
+    display: block;
+    margin: 10% auto;
+    overflow: auto;
+    border-radius: 4px;
+    position: relative;
+}
+.image-about{
+    float: left;
+    padding: 10px;
+    margin: 50px;
+    width:250px;
+    height: 300px;
+    border-radius: 4px;
+}
+.image-about img{
+    width: 250px;
+}
+.about-connect{
+    float: right;
+    width: 700px;
+    padding: 10px;
+    margin: 50px;
+    text-align: justify;
+}
+.about-connect h1{
+    line-height: 50px;
+}
+.discript{
+    width: 700px;
+    height: 500px;
+    overflow: auto;
+    margin-top: 2%;
+}
+.poup-about .btn-close{
+    right: 2%;
+    top: 2%;
+}
+.poup-about .social button{
+    margin: 10px;
+}
+nav button{
+    border: none;
+    background: none;
+    color: black;
+    display: block;
+    float: left;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-right: 0;
+    margin-left: 20px;
+    display: none;
+}
+.nav{
+    position: absolute;
+    display: none;
+    width: 100%;
+    text-align: center;
+    background:white;
+    z-index: 1;
+
+}
+.nav ul li{
+    display: block;
+    line-height: 20px;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+
+/* media query to make it responsive */
+/* First screen max width 360px mobile */
+@media only screen and (max-width:576px){
+    .show{
+        width: 100%;
+        height: auto;
+        background: none;
+    }
+    .gallery{
+        width: 100%;
+    }
+    nav #desktop{
+        display: none;
+    }
+    .singUp,
+    .login{
+        width: auto;
+    }
+    
+    .poup-about{
+        width: auto;
+        height: 800px;
+        overflow: hidden;
+    }
+    .image-about{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    .image-about img{
+        width: 200px;
+    }
+    .image-about .social button{
+        margin: 10px;
+    }
+    .about-connect{
+        display: block;
+        float: none;
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+    
+    .discript{
+        height: 250px;
+        width: auto;
+    }
+    .discript p{
+        padding: 20px;
+    }
+    .about-connect h1{
+        line-height: 100px;
+        text-align: center;
+    }
+    nav button{
+        display: block;
+    }
+}
+/* min width 567px and  max width 768*/
+@media only screen and (min-width:567px) and (max-width:768px){
+
+    .show{
+        width: 100%;
+        height: auto;
+        background: none;
+    }
+    .gallery{
+        width: 100%;
+    }
+    .nav,
+    nav button{
+        display: none;
+    }
+    .poup-about{
+        width: auto;
+        height: 800px;
+        overflow: hidden;
+    }
+    .image-about{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    .image-about img{
+        width: 200px;
+    }
+    .image-about .social button{
+        margin: 10px;
+    }
+    .about-connect{
+        display: block;
+        float: none;
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+
+    .discript{
+        height: 250px;
+        width: auto;
+    }
+    .about-connect h1{
+        text-align: center;
+        line-height: 50px;
+    }
+    .discript p{
+        padding: 20px;
+    }
+}
+/* min width 769px and  max width 991px*/
+@media only screen and (min-width:769px) and (max-width:991px){
+
+    .show{
+        width: 100%;
+        height: auto;
+        background: none;
+    }
+    .gallery{
+        width: 100%;
+    }
+    .nav,
+    nav button{
+        display: none;
+    }
+    .poup-about{
+        width: auto;
+        height: 800px;
+        overflow: hidden;
+    }
+    .image-about{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    .image-about img{
+        width: 200px;
+    }
+    .image-about .social button{
+        margin: 10px;
+    }
+    .about-connect{
+        display: block;
+        float: none;
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+
+    .discript{
+        height: 250px;
+        width: auto;
+    }
+    .about-connect h1{
+        text-align: center;
+        line-height: 50px;
+    }
+    .discript p{
+        padding: 20px;
+    }
+}
+/* min width 992px and  max width 1199px*/
+@media only screen and (min-width:992px) and (max-width:1199px){
+
+    .show{
+        width: 100%;
+        height: auto;
+        background: none;
+    }
+    .gallery{
+        width: 100%;
+    }
+    .nav,
+    nav button{
+        display: none;
+    }
+    .poup-about{
+        width: auto;
+        height: 800px;
+        overflow: hidden;
+    }
+
+    .image-about img{
+        width: 200px;
+    }
+    .image-about .social button{
+        margin: 10px;
+    }
+    .about-connect{
+        display: block;
+        float: none;
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+
+    .discript{
+        height: 500px;
+        width: auto;
+    }
+    .about-connect h1{
+        text-align: center;
+        line-height: 50px;
+    }
+    .discript p{
+        padding: 20px;
+    }
+}
