@@ -451,6 +451,9 @@ nav button{
     .discript p{
         padding: 20px;
     }
+    .title-gallary{
+        padding: 0 10px;
+    }
 }
 /* min width 769px and  max width 991px*/
 @media only screen and (min-width:769px) and (max-width:991px){
